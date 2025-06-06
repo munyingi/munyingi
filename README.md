@@ -1,45 +1,39 @@
-- Embedded Software Engineer 
+Samwel Kamau Munyingi
 
-👋 Hello Fellow engineers
+Data Scientist & AI Specialist
+👋 Hello Fellow Data Enthusiasts!
+I’m a data scientist and AI specialist passionate about transforming complex datasets into actionable insights and developing innovative AI-driven solutions. 
+My expertise spans statistical modeling, machine learning, data visualization, and software development.
 
-I'm an embedded software engineer passionate about developing efficient, reliable, and low-level software solutions for embedded systems. 
-My expertise spans across microcontrollers, RTOS, device drivers, and hardware-software integration.
+Technical Proficiency
 
-🛠 Technical Skills
-
-🖥 Embedded Platforms
-- ARM Cortex-M (M0/M3/M4/M7), AVR, PIC, ESP32, STM32, NXP, TI MSP430
-- Bare-metal programming, RTOS (FreeRTOS, Zephyr, ThreadX)
-- Low-power design and optimization
+🖥 Data & AI Platforms
+•  Python ecosystems (Pandas, NumPy, Scikit-learn)
+•  Machine learning frameworks (TensorFlow, PyTorch)
+•  Data visualization tools (Matplotlib, Seaborn, Plotly)
+•  Cloud platforms (AWS, Azure basics)
 
 💻 Programming Languages
-- C (primary), C++, Python, Rust (for embedded)
-- Assembly (ARM, AVR)
-
+•  Python (primary), R, Java, C++
+•  SQL (for database querying)
 🔧 Tools & Technologies
-- Embedded toolchains (GCC ARM, IAR, Keil)
-- Debugging (JTAG, SWD, GDB, OpenOCD)
-- Communication protocols (I2C, SPI, UART, CAN, USB, Bluetooth Low Energy)
-- Version control (Git, SVN)
-- CI/CD for embedded systems
+•  Version control (Git)
+•  Development environments (Jupyter, VS Code)
+•  Databases (SQL, data structures)
+•  Web development (HTML, CSS, basic frameworks)
 
-� Projects
+Projects
 
- [Project Name 1]
+•  Data Mining & Knowledge Discovery Applied data mining techniques and visualization tools to extract patterns from complex datasets.
+•  AI Solutions Developed machine learning models for predictive analytics and natural language processing tools.
+•  Software Engineering Projects Built web applications and database systems with optimized queries and security features.
+More projects coming soon! Check my repositories for updates.
 
-🎓 Education & Certifications
-- B.A in Applied computer science  from Chuka University
-- B.A in Mechanical Engineering(Industrial managament) from Savonia University
-
-📫 Get in Touch
-- LinkedIn: [Samwel Munyingi](https://www.linkedin.com/in/samwel-munyingi-352a88161?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
-- Email:samwelmunyingi@gmail.com
-
+🎓 Education
+•  B.Sc. in Applied Computer Science Chuka University, Kenya | Graduated: Oct 2022
+•Second Class Honours
+•  Mechanical Engineering Studies Savonia University of Applied Sciences, Finland | 2022 – 2024
 
 🌱 Learning
-What embedded technologies in relation to sofware engineering
-
-<!---
-munyingi/munyingi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+•  Exploring advanced topics in machine learning, deep learning, and MLOps.
+•  Staying updated on AI technologies, natural language processing, and data engineering.
