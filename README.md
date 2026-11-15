@@ -2,7 +2,7 @@
 
 Data engineer in Helsinki working in Python, SQL and dbt. I build pipelines end to end: ingestion, tested models, CI and a dashboard people can actually use. Open to data engineering and analytics engineering roles in Finland.
 
-Before data engineering I spent three years in fleet operations at TIER and Dott, inspecting and repairing e-scooters and recording the inspection data the business reported on. That work taught me how messy real operational data is, and it shapes how I build: check the source, test the output, make reruns safe.
+Before data engineering I spent three years in fleet operations at TIER and Dott, inspecting and repairing e-scooters and recording the inspection. That work taught me how messy real operational data is, and it shapes how I build: check the source, test the output, make reruns safe.
 
 ---
 
