@@ -117,8 +117,6 @@ FMI station observations interpolated onto about 1,700 H3 hexagons covering all 
 - **Orchestration and platform:** Dagster, Airflow, Terraform, Docker, GitHub Actions, Git
 - **Apps:** Streamlit, pandas, Altair
 
-**Currently:** preparing for Microsoft Fabric Data Engineer (DP-700).
-
 ---
 
 ### Contact
