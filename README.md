@@ -19,6 +19,8 @@ Each project below starts from a real failure mode a data team runs into, then p
 | [**E-commerce CDC**](https://github.com/munyingi/ecommerce-cdc-pipeline) | Stream every database change into a warehouse without duplicates | Full replay from offset zero: zero duplicates, revenue reconciled to the cent |
 | [**Helsinki City Bike**](https://github.com/munyingi/helsinki-citybike-pipeline) | Five seasons of public trip data with hidden duplicates | Found 1.9M duplicate trips; totals match the city's figures |
 | [**Finnish corporate tax trends**](https://github.com/munyingi/Bussiness-operations) | Vero tax data whose schema changes every year, joined to the PRH register | Every header mapping stored; build fails if a year loses a column |
+| [**Wikipulse**](https://github.com/munyingi/wikipulse) | Live Wikipedia edits plus millions of hourly page views, on Microsoft Fabric | Streaming duplicates removed in a materialized view; every Fabric item deployed by Terraform |
+| [**Finland weather and aurora**](https://github.com/munyingi/finland-weather-aurora) | Weather from 191 stations mapped onto every part of Finland, plus where to see the aurora tonight | Runs every 3 hours in GitHub Actions with per-source freshness checks |
 
 ---
 
@@ -84,6 +86,14 @@ Five seasons of HSL trips and FMI weather loaded into Snowflake with idempotent 
 Vero corporate tax open data joined to the PRH Trade Register on the Business ID. Handles schema drift between years, validates Business ID check digits before joining, and keeps original and corrected figures side by side.
 `Python` `DuckDB` `dbt` `Streamlit`
 
+#### [Wikipulse](https://github.com/munyingi/wikipulse)
+Real-time and batch analytics of Wikipedia activity on Microsoft Fabric. Live edits stream through Eventstream into an Eventhouse; hourly page view dumps go through PySpark into a Delta medallion lakehouse, and dbt builds a warehouse with row-level security and masking. Terraform, Airflow and approval-gated GitHub Actions deploys.
+`Microsoft Fabric` `PySpark` `Delta Lake` `KQL` `dbt` `Terraform` `Airflow`
+
+#### [Finland weather and aurora grid](https://github.com/munyingi/finland-weather-aurora) · [live dashboard](https://finland-weather-aurora.streamlit.app)
+FMI station observations interpolated onto about 1,700 H3 hexagons covering all of Finland, rolled up to 19 regions with extreme-weather rules. An hourly aurora score per area combines NOAA space weather, darkness and cloud forecasts into a "where to go tonight" list.
+`Python` `H3` `DuckDB` `dbt` `GitHub Actions` `Streamlit`
+
 </details>
 
 ---
@@ -102,9 +112,9 @@ Vero corporate tax open data joined to the PRH Trade Register on the Business ID
 ### Tools
 
 - **Languages:** Python, SQL, Bash
-- **Data:** dbt, Snowflake, PostgreSQL, DuckDB, Delta Lake
+- **Data:** dbt, Snowflake, PostgreSQL, DuckDB, Delta Lake, PySpark, Microsoft Fabric
 - **Streaming:** Apache Kafka, Redpanda, Debezium
-- **Orchestration and platform:** Dagster, Docker, GitHub Actions, Git
+- **Orchestration and platform:** Dagster, Airflow, Terraform, Docker, GitHub Actions, Git
 - **Apps:** Streamlit, pandas, Altair
 
 **Currently:** preparing for Microsoft Fabric Data Engineer (DP-700).
